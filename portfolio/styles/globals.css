@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Helvetica Neue, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 1px;
+
+  background: #1e242f;
+}
+
+.landing-page {
+  background: #121416;
+  color: white;
+  font-weight: normal;
+}
+
+.landing-page .content {
+  height: 100vh;
+  width: 100vw;
+  padding: 16pt;
+  max-width: 600pt;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.title .second {
+  font-weight: 500;
+}
+
+.subtitle {
+  color: #cccccc;
+}
+
+.h {
+  width: 100vw;
+  max-width: 600pt;
+  margin: auto;
+  padding-top: 120px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  color: #e6c46f;
+  text-decoration: underline;
+}
+
+.content {
+  width: 100%;
+  padding: 70px 20px 0px;
+}
+
+.content-title {
+  color: #ffab93;
+}
+
+.content-subtitle {
+  color: #c6666c;
+  font-size: 16px;
+}
+
+.content .content-subtitle {
+  font-weight: normal;
+}
+
+.projects {
+  max-width: 600pt;
+  padding: 16pt;
+
+  display: flex;
+}
+
+.contact,
+.about {
+  max-width: 600pt;
+  margin: auto;
+
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.button {
+  color: white;
+  font-size: 16px;
+
+  padding: 4px;
+
+  border: white 2px solid;
+  border-radius: 8px;
+}
+
+.footer {
+  padding-top: 128px;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+
+  border-top: 1px solid #cccccc;
+  background: #121416;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div {
+  color: #cccccc;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
