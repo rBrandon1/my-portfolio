@@ -16,7 +16,7 @@ const stringSplitter = (string: string) => {
 
 const Home: NextPage = () => {
   return (
-    <div id="app" className="app text-3xl">
+    <div className="app text-3xl">
       <Head>
         <title>Brandon Ramirez</title>
         <link rel="icon" type="image/png" href="/imgs/rocket.png" />

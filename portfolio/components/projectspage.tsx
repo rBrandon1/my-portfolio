@@ -34,8 +34,8 @@ const ProjectsPage = () => {
               projectsData={{
                 title: "Optimum Weather Website",
                 description:
-                  "This is my weather webstie that may or may not be a bit broken 😬. It is usable,\
-                    that is if you want to see the weather for a location different from your true location.\
+                  "This is my weather website that may or may not be a bit broken 😬. It is usable,\
+                    that is if you want to see the weather for a location different from your true one.\
                     Although it's not in the best shape, it allowed me to learn API's and page routing with Next.js.\
                     Maybe one day it'll get an overhaul 👀",
                 img: "/imgs/optimum.png",
