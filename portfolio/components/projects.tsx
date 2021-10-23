@@ -23,7 +23,13 @@ const Projects = (props: ProjectInfo) => {
             "grid grid-rows-2 gap-0",
             "md:grid-rows-1 md:grid-cols-2 md:gap-8"
           )}>
-          <div style={{ position: "relative" }}>
+          <div
+            style={{
+              position: "relative",
+              width: "100%",
+              height: "auto",
+              maxHeight: "315px",
+            }}>
             {img ? (
               <Image
                 src={img!}
@@ -34,7 +40,7 @@ const Projects = (props: ProjectInfo) => {
               />
             ) : null}
           </div>
-          <div>
+          <div className="mb-14">
             <div className="content-title">{title}</div>
             <div className="content-subtitle text-justify">{description}</div>
             <div style={{ paddingTop: "15px" }}>

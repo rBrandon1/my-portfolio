@@ -6,10 +6,17 @@ import SkillsPage from "../components/skillspage";
 import ProjectsPage from "../components/projectspage";
 import AboutMe from "../components/about";
 import ContactMe from "../components/contact";
+import GraphemeSplitter from "grapheme-splitter";
+
+const stringSplitter = (string: string) => {
+  const splitter = new GraphemeSplitter();
+  const split: string[] = splitter.splitGraphemes(string);
+  return split as unknown as string;
+};
 
 const Home: NextPage = () => {
   return (
-    <div className="app text-3xl">
+    <div id="app" className="app text-3xl">
       <Head>
         <title>Brandon Ramirez</title>
         <link rel="icon" type="image/png" href="/imgs/rocket.png" />
@@ -39,6 +46,7 @@ const Home: NextPage = () => {
                   loop: true,
                   pauseFor: 700,
                   delay: 100,
+                  stringSplitter,
                 }}
               />
             </div>
