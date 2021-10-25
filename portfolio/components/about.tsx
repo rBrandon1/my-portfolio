@@ -5,7 +5,7 @@ const AboutMe = () => {
   return (
     <div>
       <div className="h">
-        <div className="header">About Me</div>
+        <h1 className="header">About Me</h1>
       </div>
       <div className={clsx("content", "about text-justify")}>
         <div>

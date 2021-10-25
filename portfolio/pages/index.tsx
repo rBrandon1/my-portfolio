@@ -29,11 +29,11 @@ const Home: NextPage = () => {
       <div className="landing-page">
         <div className="content">
           <div>
-            <div className="title">
+            <h1 className="title">
               <span className="first">Hey, I&apos;m </span>
               <span className="second">Brandon! 👋</span>
-            </div>
-            <div className="subtitle text-xl">
+            </h1>
+            <h2 className="subtitle text-xl">
               <Typewriter
                 options={{
                   strings: [
@@ -49,7 +49,7 @@ const Home: NextPage = () => {
                   stringSplitter,
                 }}
               />
-            </div>
+            </h2>
           </div>
         </div>
       </div>

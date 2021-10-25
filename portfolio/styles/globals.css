@@ -7,7 +7,10 @@ body {
   font-style: italic;
   font-weight: bold;
   letter-spacing: 1px;
+  background: #121416;
+}
 
+.app {
   background: #1e242f;
 }
 
@@ -66,16 +69,18 @@ body {
   color: #c6666c;
   font-size: 16px;
   font-style: normal;
-}
-
-.content .content-subtitle {
   font-weight: normal;
 }
 
 .projects {
+  padding: 70px 20px 0px;
+  min-height: 320px;
   max-width: 600pt;
+}
 
-  display: flex;
+.img {
+  width: 100%;
+  max-height: 320px;
 }
 
 .contact,
@@ -88,6 +93,10 @@ body {
   justify-content: center;
 }
 
+.contact {
+  max-width: 900pt;
+}
+
 .button {
   color: white;
   font-size: 16px;
@@ -96,6 +105,21 @@ body {
 
   border: white 2px solid;
   border-radius: 8px;
+}
+
+.username {
+  color: white;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.contacts {
+  display: flex;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  justify-content: start;
+  align-items: center;
+  gap: 16px;
 }
 
 .footer {

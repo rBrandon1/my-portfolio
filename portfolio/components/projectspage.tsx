@@ -6,10 +6,9 @@ const ProjectsPage = () => {
   return (
     <div className="projects-page text-2xl">
       <div className="h">
-        <div className="header text-4xl">Projects</div>
+        <h1 className="header text-4xl">Projects</h1>
       </div>
-      <div
-        className={clsx("content", "overflow-hidden", "flex justify-center")}>
+      <div className={clsx("overflow-hidden", "flex justify-center")}>
         <div>
           <div>
             <Projects

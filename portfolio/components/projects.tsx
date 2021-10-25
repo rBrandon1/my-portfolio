@@ -16,55 +16,45 @@ const Projects = (props: ProjectInfo) => {
   const { title, description, img, link } = props.projectsData;
 
   return (
-    <div>
-      <div className="projects">
-        <div
-          className={clsx(
-            "grid grid-rows-2 gap-0",
-            "md:grid-rows-1 md:grid-cols-2 md:gap-8"
-          )}>
-          <div
-            style={{
-              position: "relative",
-              width: "100%",
-              height: "auto",
-              maxHeight: "315px",
-            }}>
-            {img ? (
-              <Image
-                src={img!}
-                alt="Damn, yo wifi slow"
-                layout="fill"
-                objectFit="scale-down"
-                quality={100}
-              />
-            ) : null}
-          </div>
-          <div className="mb-14">
-            <div className="content-title">{title}</div>
-            <div className="content-subtitle text-justify">{description}</div>
-            <div style={{ paddingTop: "15px" }}>
-              <button className="button hover:border-yellow-200">
-                <a href={link} target="_blank" rel="noreferrer">
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                    }}>
-                    <span>Check it out!</span>
-                    <span>
-                      <Icon
-                        icon="ci:external-link"
-                        color="white"
-                        width="25"
-                        height="25"
-                      />
-                    </span>
-                  </div>
-                </a>
-              </button>
-            </div>
+    <div className="projects">
+      <div className={clsx("grid grid-cols-1 gap-8", "md:grid-cols-2")}>
+        <div className="img">
+          {img ? (
+            <Image
+              src={img!}
+              alt="Damn, yo wifi slow"
+              layout="fixed"
+              width="320px"
+              height="320px"
+              objectFit="scale-down"
+              quality={100}
+            />
+          ) : null}
+        </div>
+        <div>
+          <div className="content-title">{title}</div>
+          <div className="content-subtitle text-justify">{description}</div>
+          <div style={{ paddingTop: "15px" }}>
+            <button className="button hover:border-yellow-200">
+              <a href={link} target="_blank" rel="noreferrer">
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}>
+                  <span>Check it out!</span>
+                  <span>
+                    <Icon
+                      icon="ci:external-link"
+                      color="white"
+                      width="25"
+                      height="25"
+                    />
+                  </span>
+                </div>
+              </a>
+            </button>
           </div>
         </div>
       </div>
