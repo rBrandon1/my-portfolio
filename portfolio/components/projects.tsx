@@ -24,7 +24,7 @@ const Projects = (props: ProjectInfo) => {
               src={img!}
               alt="Damn, yo wifi slow"
               layout="fixed"
-              width="320px"
+              width="162px"
               height="320px"
               objectFit="scale-down"
               quality={100}

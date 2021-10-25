@@ -99,15 +99,6 @@ const SkillsPage = () => {
               }}
             />
           </div>
-          <div>
-            <Skills
-              skillsData={{
-                title: "Sketch",
-                icon: "logos:sketch",
-                years: "<1 yr",
-              }}
-            />
-          </div>
         </div>
       </div>
     </div>
