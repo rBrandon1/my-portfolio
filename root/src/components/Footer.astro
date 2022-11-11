@@ -1,0 +1,25 @@
+---
+const today: Date = new Date();
+---
+
+<footer class="bottom-0">
+  <div class="ftr name max-w-[860px]">
+    <div>
+      &copy;&nbsp;Brandon Ramirez&nbsp;{today.getFullYear()}
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer {
+    padding-top: 76px;
+  }
+  .ftr {
+    margin: auto;
+    padding: 24px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: #ccc;
+  }
+</style>

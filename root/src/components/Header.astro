@@ -1,0 +1,32 @@
+---
+import HeaderLink from "@components/HeaderLink.astro";
+---
+
+<header
+  class="sticky top-0 backdrop-blur-sm border-b-[1px] bg-[#0e1114] bg-opacity-60 flex justify-center md:justify-end items-center flex-nowrap"
+>
+  <div class="pl-0 pr-0 md:pl-4 md:pr-4">
+    <HeaderLink
+      class="hover:underline decoration-wavy decoration-red-400 p-3 underline-offset-4"
+      href="/">Home</HeaderLink
+    >
+    <HeaderLink
+      class="hover:underline decoration-wavy decoration-red-400 p-3 underline-offset-4"
+      href="/projects">Projects</HeaderLink
+    >
+    <HeaderLink
+      class="hover:underline decoration-wavy decoration-red-400 p-3 underline-offset-4"
+      href="/tools">Tools</HeaderLink
+    >
+  </div>
+</header>
+<style>
+  header {
+    margin: auto;
+    width: 100%;
+    height: 72px;
+    z-index: 900;
+
+    color: #ccc;
+  }
+</style>

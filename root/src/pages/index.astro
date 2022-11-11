@@ -1,0 +1,70 @@
+---
+import Socials from "@components/Socials.astro";
+import MainLayout from "@layouts/MainLayout.astro";
+---
+
+<MainLayout>
+  <div slot="title">Hey, I&apos;m Brandon.</div>
+  <div class="[color:#ccc] pt-4 pb-4">
+    I'm a student at <span class="text-red-400">Arizona State University</span>,
+    majoring in Computer Science. I work on websites focusing on front-end
+    development. Over the past couple of months, I have been teaching myself how
+    to utilize databases and have geared towards backend development.
+  </div>
+  <ul class="flex">
+    <Socials
+      link="https://www.linkedin.com/in/brandnramirez/"
+      alt="linkedin"
+      src="/img/socials/linkedin.svg"
+    />
+    <Socials
+      link="https://github.com/rBrandon1"
+      alt="github"
+      src="/img/socials/github.svg"
+    />
+    <Socials
+      link="mailto:ramirezbrandon077@gmail.com"
+      alt="email"
+      src="/img/socials/mail.svg"
+    />
+  </ul>
+  <hr />
+  <div class="text-2xl md:text-3xl font-bold">Work Experience</div>
+  <div class="[color:#ccc] pt-2">
+    Currently I have no work experience within the field of my major. However, I
+    am actively searching for any open positions as I approach my Junior year
+    coming up in Fall 2023.
+  </div>
+  <hr />
+  <div class="text-2xl md:text-3xl font-bold">About This Website</div>
+  <div class="[color:#ccc] pt-2">
+    <ul class="list-disc pl-4">
+      <li>
+        Built using the <a
+          href="https://astro.build/"
+          target="_blank"
+          rel="noreferrer"
+          class="underline underline-offset-4 hover:text-red-400">Astro</a
+        >
+        framework
+      </li>
+      <li>
+        Styled with <a
+          href="https://tailwindcss.com/"
+          target="_blank"
+          rel="noreferrer"
+          class="underline underline-offset-4 hover:text-red-400"
+          >Tailwind CSS</a
+        >
+      </li>
+      <li>
+        Hosted on <a
+          href="https://vercel.com/"
+          target="_blank"
+          rel="noreferrer"
+          class="underline underline-offset-4 hover:text-red-400">Vercel</a
+        >
+      </li>
+    </ul>
+  </div>
+</MainLayout>

@@ -1,0 +1,35 @@
+---
+import MainLayout from "@layouts/MainLayout.astro";
+import ProjectsLayout from "@layouts/ProjectsLayout.astro";
+---
+
+<MainLayout>
+  <div slot="title">My Projects</div>
+  <div class="[color:#ccc] pt-4">
+    Here are some projects that I've worked on to better my programming skills.
+  </div>
+  <hr />
+  <ProjectsLayout
+    imgAlt="snax"
+    imgSrc="/img/projects/snax.png"
+    btnLink="https://orifriesen.wixsite.com/mysite/snax"
+    btnName="orifriesen.wixsite.com"
+  >
+    <div slot="name">Snax</div>
+    <div slot="description">
+      Snax is a cross-platform app that gives the snacking world its own social
+      media platform. This app was made using Flutter in Visual Studio Code and
+      Firebase.
+    </div>
+  </ProjectsLayout>
+  <ProjectsLayout
+    imgAlt="weather"
+    imgSrc="/img/projects/comingsoon.png"
+    showBtn={false}
+  >
+    <div slot="name">Weather Website</div>
+    <div slot="description">
+      Coming Soon. This project is currently in the works.
+    </div>
+  </ProjectsLayout>
+</MainLayout>

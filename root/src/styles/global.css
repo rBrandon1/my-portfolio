@@ -1,0 +1,29 @@
+/*
+  The CSS in this style tag is based off of Bear Blog's default CSS.
+  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
+  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
+ */
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "DejaVu Mono", monospace;
+  color: white;
+  background: #0e1114;
+}
+
+.main .container {
+  margin: auto;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+hr {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+svg {
+  fill: red;
+}

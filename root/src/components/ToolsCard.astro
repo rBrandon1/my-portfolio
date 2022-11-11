@@ -1,0 +1,39 @@
+---
+import clsx from "clsx";
+export interface Tools {
+  imgSrc: string;
+  link?: string;
+  title: string;
+  website?: string;
+  bgColor?: string;
+
+  hover?: boolean;
+}
+const {
+  imgSrc,
+  link,
+  title,
+  website,
+  bgColor = "bg-[#ccc]",
+  hover = true,
+} = Astro.props;
+---
+
+<a
+  href={link}
+  target="_blank"
+  rel="noreferrer"
+  class={clsx(
+    "border-[1px] border-[#ccc] rounded-lg overflow-hidden hover:shadow-lg",
+    hover &&
+      "hover:shadow-lg hover:shadow-red-400 hover:-m-[2px] ease-in-out duration-200"
+  )}
+>
+  <div class={clsx("block w-full pt-8 pb-8 text-center h-[144px]", bgColor)}>
+    <img class="mx-auto max-w-[80px]" src={imgSrc} />
+  </div>
+  <div class="p-6">
+    <div class="font-bold text-lg">{title}</div>
+    <div class="[color:#ccc] text-sm">{website}</div>
+  </div>
+</a>
